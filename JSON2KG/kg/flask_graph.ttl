@@ -1,0 +1,1435 @@
+@prefix code: <http://example.org/code#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+code:ClassApp a code:Class ;
+    rdfs:label "App"^^xsd:string ;
+    code:hasMethod code:APIflask_app_App_redirect,
+        code:APIflask_sansio_app_App_redirect .
+
+code:ClassFlask a code:Class ;
+    rdfs:label "Flask"^^xsd:string ;
+    code:hasMethod code:APIflask_Flask_make_response,
+        code:APIflask_Flask_redirect,
+        code:APIflask_Flask_url_for,
+        code:APIflask_app_Flask_make_response,
+        code:APIflask_app_Flask_redirect,
+        code:APIflask_app_Flask_url_for .
+
+code:Flask_3.0.2 a code:Library ;
+    rdfs:label "Flask 3.0.2"^^xsd:string ;
+    code:hasScript code:Scripttemp_venv_temp_venv_flask_Lib_site-packages_flask_app_py,
+        code:Scripttemp_venv_temp_venv_flask_Lib_site-packages_flask_blueprints_py,
+        code:Scripttemp_venv_temp_venv_flask_Lib_site-packages_flask_config_py,
+        code:Scripttemp_venv_temp_venv_flask_Lib_site-packages_flask_ctx_py,
+        code:Scripttemp_venv_temp_venv_flask_Lib_site-packages_flask_globals_py,
+        code:Scripttemp_venv_temp_venv_flask_Lib_site-packages_flask_helpers_py,
+        code:Scripttemp_venv_temp_venv_flask_Lib_site-packages_flask_json___init___py,
+        code:Scripttemp_venv_temp_venv_flask_Lib_site-packages_flask_sansio_app_py,
+        code:Scripttemp_venv_temp_venv_flask_Lib_site-packages_flask_sansio_blueprints_py,
+        code:Scripttemp_venv_temp_venv_flask_Lib_site-packages_flask_signals_py,
+        code:Scripttemp_venv_temp_venv_flask_Lib_site-packages_flask_templating_py,
+        code:Scripttemp_venv_temp_venv_flask_Lib_site-packages_flask_typing_py,
+        code:Scripttemp_venv_temp_venv_flask_Lib_site-packages_flask_wrappers_py,
+        code:Scripttemp_venv_temp_venv_flask_Lib_site-packages_werkzeug_sansio_response_py .
+
+code:ReturnValue rdfs:label "ReturnValue" .
+
+code:containModule rdfs:label "contain module" .
+
+code:hasDescription rdfs:label "has description" .
+
+code:hasMethod rdfs:label "has method" .
+
+code:hasParameter rdfs:label "has parameter" .
+
+code:hasReturnValue rdfs:label "has return value" .
+
+code:hasReturnValueType rdfs:label "has return value type" .
+
+code:hasScript rdfs:label "has script" .
+
+code:include rdfs:label "include" .
+
+code:inherit rdfs:label "inherit" .
+
+code:APIflask_Flask_make_response a code:API ;
+    rdfs:label "flask.Flask.make_response"^^xsd:string ;
+    code:hasDescription code:Descriptionflask_Flask_make_response_desc ;
+    code:hasParameter code:Parameterflask_Flask_make_response_rv,
+        code:Parameterflask_Flask_make_response_self .
+
+code:APIflask_Flask_redirect a code:API ;
+    rdfs:label "flask.Flask.redirect"^^xsd:string ;
+    code:hasDescription code:Descriptionflask_Flask_redirect_desc ;
+    code:hasParameter code:Parameterflask_Flask_redirect_code,
+        code:Parameterflask_Flask_redirect_location,
+        code:Parameterflask_Flask_redirect_self .
+
+code:APIflask_Flask_url_for a code:API ;
+    rdfs:label "flask.Flask.url_for"^^xsd:string ;
+    code:hasDescription code:Descriptionflask_Flask_url_for_desc ;
+    code:hasParameter code:Parameterflask_Flask_url_for__anchor,
+        code:Parameterflask_Flask_url_for__external,
+        code:Parameterflask_Flask_url_for__method,
+        code:Parameterflask_Flask_url_for__scheme,
+        code:Parameterflask_Flask_url_for_endpoint,
+        code:Parameterflask_Flask_url_for_self,
+        code:Parameterflask_Flask_url_for_values .
+
+code:APIflask_abort a code:API ;
+    rdfs:label "flask.abort"^^xsd:string ;
+    code:hasDescription code:Descriptionflask_abort_desc ;
+    code:hasParameter code:Parameterflask_abort_args,
+        code:Parameterflask_abort_code,
+        code:Parameterflask_abort_kwargs .
+
+code:APIflask_after_this_request a code:API ;
+    rdfs:label "flask.after_this_request"^^xsd:string ;
+    code:hasDescription code:Descriptionflask_after_this_request_desc ;
+    code:hasParameter code:Parameterflask_after_this_request_f .
+
+code:APIflask_app_App_redirect a code:API ;
+    rdfs:label "flask.app.App.redirect"^^xsd:string ;
+    code:hasDescription code:Descriptionflask_app_App_redirect_desc ;
+    code:hasParameter code:Parameterflask_app_App_redirect_code,
+        code:Parameterflask_app_App_redirect_location,
+        code:Parameterflask_app_App_redirect_self .
+
+code:APIflask_app_Flask_make_response a code:API ;
+    rdfs:label "flask.app.Flask.make_response"^^xsd:string ;
+    code:hasDescription code:Descriptionflask_app_Flask_make_response_desc ;
+    code:hasParameter code:Parameterflask_app_Flask_make_response_rv,
+        code:Parameterflask_app_Flask_make_response_self .
+
+code:APIflask_app_Flask_redirect a code:API ;
+    rdfs:label "flask.app.Flask.redirect"^^xsd:string ;
+    code:hasDescription code:Descriptionflask_app_Flask_redirect_desc ;
+    code:hasParameter code:Parameterflask_app_Flask_redirect_code,
+        code:Parameterflask_app_Flask_redirect_location,
+        code:Parameterflask_app_Flask_redirect_self .
+
+code:APIflask_app_Flask_url_for a code:API ;
+    rdfs:label "flask.app.Flask.url_for"^^xsd:string ;
+    code:hasDescription code:Descriptionflask_app_Flask_url_for_desc ;
+    code:hasParameter code:Parameterflask_app_Flask_url_for__anchor,
+        code:Parameterflask_app_Flask_url_for__external,
+        code:Parameterflask_app_Flask_url_for__method,
+        code:Parameterflask_app_Flask_url_for__scheme,
+        code:Parameterflask_app_Flask_url_for_endpoint,
+        code:Parameterflask_app_Flask_url_for_self,
+        code:Parameterflask_app_Flask_url_for_values .
+
+code:APIflask_app_get_flashed_messages a code:API ;
+    rdfs:label "flask.app.get_flashed_messages"^^xsd:string ;
+    code:hasDescription code:Descriptionflask_app_get_flashed_messages_desc ;
+    code:hasParameter code:Parameterflask_app_get_flashed_messages_category_filter,
+        code:Parameterflask_app_get_flashed_messages_with_categories .
+
+code:APIflask_app_send_from_directory a code:API ;
+    rdfs:label "flask.app.send_from_directory"^^xsd:string ;
+    code:hasDescription code:Descriptionflask_app_send_from_directory_desc ;
+    code:hasParameter code:Parameterflask_app_send_from_directory_directory,
+        code:Parameterflask_app_send_from_directory_kwargs,
+        code:Parameterflask_app_send_from_directory_path .
+
+code:APIflask_blueprints_send_from_directory a code:API ;
+    rdfs:label "flask.blueprints.send_from_directory"^^xsd:string ;
+    code:hasDescription code:Descriptionflask_blueprints_send_from_directory_desc ;
+    code:hasParameter code:Parameterflask_blueprints_send_from_directory_directory,
+        code:Parameterflask_blueprints_send_from_directory_kwargs,
+        code:Parameterflask_blueprints_send_from_directory_path .
+
+code:APIflask_copy_current_request_context a code:API ;
+    rdfs:label "flask.copy_current_request_context"^^xsd:string ;
+    code:hasDescription code:Descriptionflask_copy_current_request_context_desc ;
+    code:hasParameter code:Parameterflask_copy_current_request_context_f .
+
+code:APIflask_ctx_after_this_request a code:API ;
+    rdfs:label "flask.ctx.after_this_request"^^xsd:string ;
+    code:hasDescription code:Descriptionflask_ctx_after_this_request_desc ;
+    code:hasParameter code:Parameterflask_ctx_after_this_request_f .
+
+code:APIflask_ctx_copy_current_request_context a code:API ;
+    rdfs:label "flask.ctx.copy_current_request_context"^^xsd:string ;
+    code:hasDescription code:Descriptionflask_ctx_copy_current_request_context_desc ;
+    code:hasParameter code:Parameterflask_ctx_copy_current_request_context_f .
+
+code:APIflask_ctx_has_app_context a code:API ;
+    rdfs:label "flask.ctx.has_app_context"^^xsd:string ;
+    code:hasDescription code:Descriptionflask_ctx_has_app_context_desc .
+
+code:APIflask_ctx_has_request_context a code:API ;
+    rdfs:label "flask.ctx.has_request_context"^^xsd:string ;
+    code:hasDescription code:Descriptionflask_ctx_has_request_context_desc .
+
+code:APIflask_flash a code:API ;
+    rdfs:label "flask.flash"^^xsd:string ;
+    code:hasDescription code:Descriptionflask_flash_desc ;
+    code:hasParameter code:Parameterflask_flash_category,
+        code:Parameterflask_flash_message .
+
+code:APIflask_get_flashed_messages a code:API ;
+    rdfs:label "flask.get_flashed_messages"^^xsd:string ;
+    code:hasDescription code:Descriptionflask_get_flashed_messages_desc ;
+    code:hasParameter code:Parameterflask_get_flashed_messages_category_filter,
+        code:Parameterflask_get_flashed_messages_with_categories .
+
+code:APIflask_get_template_attribute a code:API ;
+    rdfs:label "flask.get_template_attribute"^^xsd:string ;
+    code:hasDescription code:Descriptionflask_get_template_attribute_desc ;
+    code:hasParameter code:Parameterflask_get_template_attribute_attribute,
+        code:Parameterflask_get_template_attribute_template_name .
+
+code:APIflask_has_app_context a code:API ;
+    rdfs:label "flask.has_app_context"^^xsd:string ;
+    code:hasDescription code:Descriptionflask_has_app_context_desc .
+
+code:APIflask_has_request_context a code:API ;
+    rdfs:label "flask.has_request_context"^^xsd:string ;
+    code:hasDescription code:Descriptionflask_has_request_context_desc .
+
+code:APIflask_helpers_abort a code:API ;
+    rdfs:label "flask.helpers.abort"^^xsd:string ;
+    code:hasDescription code:Descriptionflask_helpers_abort_desc ;
+    code:hasParameter code:Parameterflask_helpers_abort_args,
+        code:Parameterflask_helpers_abort_code,
+        code:Parameterflask_helpers_abort_kwargs .
+
+code:APIflask_helpers_flash a code:API ;
+    rdfs:label "flask.helpers.flash"^^xsd:string ;
+    code:hasDescription code:Descriptionflask_helpers_flash_desc ;
+    code:hasParameter code:Parameterflask_helpers_flash_category,
+        code:Parameterflask_helpers_flash_message .
+
+code:APIflask_helpers_get_flashed_messages a code:API ;
+    rdfs:label "flask.helpers.get_flashed_messages"^^xsd:string ;
+    code:hasDescription code:Descriptionflask_helpers_get_flashed_messages_desc ;
+    code:hasParameter code:Parameterflask_helpers_get_flashed_messages_category_filter,
+        code:Parameterflask_helpers_get_flashed_messages_with_categories .
+
+code:APIflask_helpers_get_template_attribute a code:API ;
+    rdfs:label "flask.helpers.get_template_attribute"^^xsd:string ;
+    code:hasDescription code:Descriptionflask_helpers_get_template_attribute_desc ;
+    code:hasParameter code:Parameterflask_helpers_get_template_attribute_attribute,
+        code:Parameterflask_helpers_get_template_attribute_template_name .
+
+code:APIflask_helpers_make_response a code:API ;
+    rdfs:label "flask.helpers.make_response"^^xsd:string ;
+    code:hasDescription code:Descriptionflask_helpers_make_response_desc ;
+    code:hasParameter code:Parameterflask_helpers_make_response_args .
+
+code:APIflask_helpers_redirect a code:API ;
+    rdfs:label "flask.helpers.redirect"^^xsd:string ;
+    code:hasDescription code:Descriptionflask_helpers_redirect_desc ;
+    code:hasParameter code:Parameterflask_helpers_redirect_Response,
+        code:Parameterflask_helpers_redirect_code,
+        code:Parameterflask_helpers_redirect_location .
+
+code:APIflask_helpers_send_file a code:API ;
+    rdfs:label "flask.helpers.send_file"^^xsd:string ;
+    code:hasDescription code:Descriptionflask_helpers_send_file_desc ;
+    code:hasParameter code:Parameterflask_helpers_send_file_as_attachment,
+        code:Parameterflask_helpers_send_file_conditional,
+        code:Parameterflask_helpers_send_file_download_name,
+        code:Parameterflask_helpers_send_file_etag,
+        code:Parameterflask_helpers_send_file_last_modified,
+        code:Parameterflask_helpers_send_file_max_age,
+        code:Parameterflask_helpers_send_file_mimetype,
+        code:Parameterflask_helpers_send_file_path_or_file .
+
+code:APIflask_helpers_send_from_directory a code:API ;
+    rdfs:label "flask.helpers.send_from_directory"^^xsd:string ;
+    code:hasDescription code:Descriptionflask_helpers_send_from_directory_desc ;
+    code:hasParameter code:Parameterflask_helpers_send_from_directory_directory,
+        code:Parameterflask_helpers_send_from_directory_kwargs,
+        code:Parameterflask_helpers_send_from_directory_path .
+
+code:APIflask_helpers_stream_with_context a code:API ;
+    rdfs:label "flask.helpers.stream_with_context"^^xsd:string ;
+    code:hasDescription code:Descriptionflask_helpers_stream_with_context_desc ;
+    code:hasParameter code:Parameterflask_helpers_stream_with_context_generator_or_function .
+
+code:APIflask_helpers_url_for a code:API ;
+    rdfs:label "flask.helpers.url_for"^^xsd:string ;
+    code:hasDescription code:Descriptionflask_helpers_url_for_desc ;
+    code:hasParameter code:Parameterflask_helpers_url_for__anchor,
+        code:Parameterflask_helpers_url_for__external,
+        code:Parameterflask_helpers_url_for__method,
+        code:Parameterflask_helpers_url_for__scheme,
+        code:Parameterflask_helpers_url_for_endpoint,
+        code:Parameterflask_helpers_url_for_values .
+
+code:APIflask_json_jsonify a code:API ;
+    rdfs:label "flask.json.jsonify"^^xsd:string ;
+    code:hasDescription code:Descriptionflask_json_jsonify_desc ;
+    code:hasParameter code:Parameterflask_json_jsonify_args,
+        code:Parameterflask_json_jsonify_kwargs .
+
+code:APIflask_jsonify a code:API ;
+    rdfs:label "flask.jsonify"^^xsd:string ;
+    code:hasDescription code:Descriptionflask_jsonify_desc ;
+    code:hasParameter code:Parameterflask_jsonify_args,
+        code:Parameterflask_jsonify_kwargs .
+
+code:APIflask_make_response a code:API ;
+    rdfs:label "flask.make_response"^^xsd:string ;
+    code:hasDescription code:Descriptionflask_make_response_desc ;
+    code:hasParameter code:Parameterflask_make_response_args .
+
+code:APIflask_redirect a code:API ;
+    rdfs:label "flask.redirect"^^xsd:string ;
+    code:hasDescription code:Descriptionflask_redirect_desc ;
+    code:hasParameter code:Parameterflask_redirect_Response,
+        code:Parameterflask_redirect_code,
+        code:Parameterflask_redirect_location .
+
+code:APIflask_render_template a code:API ;
+    rdfs:label "flask.render_template"^^xsd:string ;
+    code:hasDescription code:Descriptionflask_render_template_desc ;
+    code:hasParameter code:Parameterflask_render_template_context,
+        code:Parameterflask_render_template_template_name_or_list .
+
+code:APIflask_render_template_string a code:API ;
+    rdfs:label "flask.render_template_string"^^xsd:string ;
+    code:hasDescription code:Descriptionflask_render_template_string_desc ;
+    code:hasParameter code:Parameterflask_render_template_string_context,
+        code:Parameterflask_render_template_string_source .
+
+code:APIflask_sansio_app_App_redirect a code:API ;
+    rdfs:label "flask.sansio.app.App.redirect"^^xsd:string ;
+    code:hasDescription code:Descriptionflask_sansio_app_App_redirect_desc ;
+    code:hasParameter code:Parameterflask_sansio_app_App_redirect_code,
+        code:Parameterflask_sansio_app_App_redirect_location,
+        code:Parameterflask_sansio_app_App_redirect_self .
+
+code:APIflask_send_file a code:API ;
+    rdfs:label "flask.send_file"^^xsd:string ;
+    code:hasDescription code:Descriptionflask_send_file_desc ;
+    code:hasParameter code:Parameterflask_send_file_as_attachment,
+        code:Parameterflask_send_file_conditional,
+        code:Parameterflask_send_file_download_name,
+        code:Parameterflask_send_file_etag,
+        code:Parameterflask_send_file_last_modified,
+        code:Parameterflask_send_file_max_age,
+        code:Parameterflask_send_file_mimetype,
+        code:Parameterflask_send_file_path_or_file .
+
+code:APIflask_send_from_directory a code:API ;
+    rdfs:label "flask.send_from_directory"^^xsd:string ;
+    code:hasDescription code:Descriptionflask_send_from_directory_desc ;
+    code:hasParameter code:Parameterflask_send_from_directory_directory,
+        code:Parameterflask_send_from_directory_kwargs,
+        code:Parameterflask_send_from_directory_path .
+
+code:APIflask_stream_template a code:API ;
+    rdfs:label "flask.stream_template"^^xsd:string ;
+    code:hasDescription code:Descriptionflask_stream_template_desc ;
+    code:hasParameter code:Parameterflask_stream_template_context,
+        code:Parameterflask_stream_template_template_name_or_list .
+
+code:APIflask_stream_template_string a code:API ;
+    rdfs:label "flask.stream_template_string"^^xsd:string ;
+    code:hasDescription code:Descriptionflask_stream_template_string_desc ;
+    code:hasParameter code:Parameterflask_stream_template_string_context,
+        code:Parameterflask_stream_template_string_source .
+
+code:APIflask_stream_with_context a code:API ;
+    rdfs:label "flask.stream_with_context"^^xsd:string ;
+    code:hasDescription code:Descriptionflask_stream_with_context_desc ;
+    code:hasParameter code:Parameterflask_stream_with_context_generator_or_function .
+
+code:APIflask_templating_render_template a code:API ;
+    rdfs:label "flask.templating.render_template"^^xsd:string ;
+    code:hasDescription code:Descriptionflask_templating_render_template_desc ;
+    code:hasParameter code:Parameterflask_templating_render_template_context,
+        code:Parameterflask_templating_render_template_template_name_or_list .
+
+code:APIflask_templating_render_template_string a code:API ;
+    rdfs:label "flask.templating.render_template_string"^^xsd:string ;
+    code:hasDescription code:Descriptionflask_templating_render_template_string_desc ;
+    code:hasParameter code:Parameterflask_templating_render_template_string_context,
+        code:Parameterflask_templating_render_template_string_source .
+
+code:APIflask_templating_stream_template a code:API ;
+    rdfs:label "flask.templating.stream_template"^^xsd:string ;
+    code:hasDescription code:Descriptionflask_templating_stream_template_desc ;
+    code:hasParameter code:Parameterflask_templating_stream_template_context,
+        code:Parameterflask_templating_stream_template_template_name_or_list .
+
+code:APIflask_templating_stream_template_string a code:API ;
+    rdfs:label "flask.templating.stream_template_string"^^xsd:string ;
+    code:hasDescription code:Descriptionflask_templating_stream_template_string_desc ;
+    code:hasParameter code:Parameterflask_templating_stream_template_string_context,
+        code:Parameterflask_templating_stream_template_string_source .
+
+code:APIflask_templating_stream_with_context a code:API ;
+    rdfs:label "flask.templating.stream_with_context"^^xsd:string ;
+    code:hasDescription code:Descriptionflask_templating_stream_with_context_desc ;
+    code:hasParameter code:Parameterflask_templating_stream_with_context_generator_or_function .
+
+code:APIflask_url_for a code:API ;
+    rdfs:label "flask.url_for"^^xsd:string ;
+    code:hasDescription code:Descriptionflask_url_for_desc ;
+    code:hasParameter code:Parameterflask_url_for__anchor,
+        code:Parameterflask_url_for__external,
+        code:Parameterflask_url_for__method,
+        code:Parameterflask_url_for__scheme,
+        code:Parameterflask_url_for_endpoint,
+        code:Parameterflask_url_for_values .
+
+code:Classflask_Blueprint a code:Class ;
+    rdfs:label "flask.Blueprint"^^xsd:string ;
+    code:hasDescription code:Descriptionflask_Blueprint_desc .
+
+code:Classflask_Config a code:Class ;
+    rdfs:label "flask.Config"^^xsd:string ;
+    code:hasDescription code:Descriptionflask_Config_desc .
+
+code:Classflask_Flask a code:Class ;
+    rdfs:label "flask.Flask"^^xsd:string ;
+    code:hasDescription code:Descriptionflask_Flask_desc .
+
+code:Classflask_Request a code:Class ;
+    rdfs:label "flask.Request"^^xsd:string ;
+    code:hasDescription code:Descriptionflask_Request_desc .
+
+code:Classflask_Response a code:Class ;
+    rdfs:label "flask.Response"^^xsd:string ;
+    code:hasDescription code:Descriptionflask_Response_desc .
+
+code:Classflask_app_Flask a code:Class ;
+    rdfs:label "flask.app.Flask"^^xsd:string ;
+    code:hasDescription code:Descriptionflask_app_Flask_desc .
+
+code:Classflask_app_Request a code:Class ;
+    rdfs:label "flask.app.Request"^^xsd:string ;
+    code:hasDescription code:Descriptionflask_app_Request_desc .
+
+code:Classflask_app_Response a code:Class ;
+    rdfs:label "flask.app.Response"^^xsd:string ;
+    code:hasDescription code:Descriptionflask_app_Response_desc .
+
+code:Classflask_blueprints_Blueprint a code:Class ;
+    rdfs:label "flask.blueprints.Blueprint"^^xsd:string ;
+    code:hasDescription code:Descriptionflask_blueprints_Blueprint_desc .
+
+code:Classflask_config_Config a code:Class ;
+    rdfs:label "flask.config.Config"^^xsd:string ;
+    code:hasDescription code:Descriptionflask_config_Config_desc .
+
+code:Classflask_sansio_app_Config a code:Class ;
+    rdfs:label "flask.sansio.app.Config"^^xsd:string ;
+    code:hasDescription code:Descriptionflask_sansio_app_Config_desc .
+
+code:Classflask_sansio_app_Response a code:Class ;
+    rdfs:label "flask.sansio.app.Response"^^xsd:string ;
+    code:hasDescription code:Descriptionflask_sansio_app_Response_desc .
+
+code:Classflask_sansio_blueprints_Blueprint a code:Class ;
+    rdfs:label "flask.sansio.blueprints.Blueprint"^^xsd:string ;
+    code:hasDescription code:Descriptionflask_sansio_blueprints_Blueprint_desc .
+
+code:Classflask_wrappers_Request a code:Class ;
+    rdfs:label "flask.wrappers.Request"^^xsd:string ;
+    code:hasDescription code:Descriptionflask_wrappers_Request_desc .
+
+code:Classflask_wrappers_Response a code:Class ;
+    rdfs:label "flask.wrappers.Response"^^xsd:string ;
+    code:hasDescription code:Descriptionflask_wrappers_Response_desc .
+
+code:Descriptionflask_Blueprint_desc a code:Description ;
+    rdfs:label """Represents a blueprint, a collection of routes and other
+app-related functions that can be registered on a real application
+later.
+
+A blueprint is an object that allows defining application functions
+"""^^xsd:string .
+
+code:Descriptionflask_Config_desc a code:Description ;
+    rdfs:label """Works exactly like a dict but provides ways to fill it from files
+or special dictionaries.  There are two common patterns to populate the
+config.
+
+Either you can fill the config from a config file::
+
+"""^^xsd:string .
+
+code:Descriptionflask_Flask_desc a code:Description ;
+    rdfs:label """The flask object implements a WSGI application and acts as the central
+object.  It is passed the name of the module or package of the
+application.  Once it is created it will act as a central registry"""^^xsd:string .
+
+code:Descriptionflask_Flask_make_response_desc a code:Description ;
+    rdfs:label """Convert the return value from a view function to an instance of
+:attr:`response_class`.
+
+:param rv: the return value from the view function. The view function
+    must return a response. Returning ``N"""^^xsd:string .
+
+code:Descriptionflask_Flask_redirect_desc a code:Description ;
+    rdfs:label """Create a redirect response object.
+
+This is called by :func:`flask.redirect`, and can be called
+directly as well.
+
+:param location: The URL to redirect to.
+:param code: The status code for the redirec"""^^xsd:string .
+
+code:Descriptionflask_Flask_url_for_desc a code:Description ;
+    rdfs:label """Generate a URL to the given endpoint with the given values.
+
+This is called by :func:`flask.url_for`, and can be called
+directly as well.
+
+An *endpoint* is the name of a URL rule, usually added with
+:"""^^xsd:string .
+
+code:Descriptionflask_Request_desc a code:Description ;
+    rdfs:label """The request object used by default in Flask.  Remembers the
+matched endpoint and view arguments.
+
+It is what ends up as :class:`~flask.request`.  If you want to replace
+the request object used you can"""^^xsd:string .
+
+code:Descriptionflask_Response_desc a code:Description ;
+    rdfs:label """The response object that is used by default in Flask.  Works like the
+response object from Werkzeug but is set to have an HTML mimetype by
+default.  Quite often you don't have to create this object yo"""^^xsd:string .
+
+code:Descriptionflask_abort_desc a code:Description ;
+    rdfs:label """Raise an :exc:`~werkzeug.exceptions.HTTPException` for the given
+status code.
+
+If :data:`~flask.current_app` is available, it will call its
+:attr:`~flask.Flask.aborter` object, otherwise it will use
+:"""^^xsd:string .
+
+code:Descriptionflask_after_this_request_desc a code:Description ;
+    rdfs:label """Executes a function after this request.  This is useful to modify
+response objects.  The function is passed the response object and has
+to return the same or a new one.
+
+Example::
+
+    @app.route('/')"""^^xsd:string .
+
+code:Descriptionflask_app_App_redirect_desc a code:Description ;
+    rdfs:label """Create a redirect response object.
+
+This is called by :func:`flask.redirect`, and can be called
+directly as well.
+
+:param location: The URL to redirect to.
+:param code: The status code for the redirec"""^^xsd:string .
+
+code:Descriptionflask_app_Flask_desc a code:Description ;
+    rdfs:label """The flask object implements a WSGI application and acts as the central
+object.  It is passed the name of the module or package of the
+application.  Once it is created it will act as a central registry"""^^xsd:string .
+
+code:Descriptionflask_app_Flask_make_response_desc a code:Description ;
+    rdfs:label """Convert the return value from a view function to an instance of
+:attr:`response_class`.
+
+:param rv: the return value from the view function. The view function
+    must return a response. Returning ``N"""^^xsd:string .
+
+code:Descriptionflask_app_Flask_redirect_desc a code:Description ;
+    rdfs:label """Create a redirect response object.
+
+This is called by :func:`flask.redirect`, and can be called
+directly as well.
+
+:param location: The URL to redirect to.
+:param code: The status code for the redirec"""^^xsd:string .
+
+code:Descriptionflask_app_Flask_url_for_desc a code:Description ;
+    rdfs:label """Generate a URL to the given endpoint with the given values.
+
+This is called by :func:`flask.url_for`, and can be called
+directly as well.
+
+An *endpoint* is the name of a URL rule, usually added with
+:"""^^xsd:string .
+
+code:Descriptionflask_app_Request_desc a code:Description ;
+    rdfs:label """The request object used by default in Flask.  Remembers the
+matched endpoint and view arguments.
+
+It is what ends up as :class:`~flask.request`.  If you want to replace
+the request object used you can"""^^xsd:string .
+
+code:Descriptionflask_app_Response_desc a code:Description ;
+    rdfs:label """The response object that is used by default in Flask.  Works like the
+response object from Werkzeug but is set to have an HTML mimetype by
+default.  Quite often you don't have to create this object yo"""^^xsd:string .
+
+code:Descriptionflask_app_get_flashed_messages_desc a code:Description ;
+    rdfs:label """Pulls all flashed messages from the session and returns them.
+Further calls in the same request to the function will return
+the same messages.  By default just the messages are returned,
+but when `wit"""^^xsd:string .
+
+code:Descriptionflask_app_send_from_directory_desc a code:Description ;
+    rdfs:label """Send a file from within a directory using :func:`send_file`.
+
+.. code-block:: python
+
+    @app.route("/uploads/<path:name>")
+    def download_file(name):
+        return send_from_directory(
+          """^^xsd:string .
+
+code:Descriptionflask_blueprints_Blueprint_desc a code:Description ;
+    rdfs:label """Represents a blueprint, a collection of routes and other
+app-related functions that can be registered on a real application
+later.
+
+A blueprint is an object that allows defining application functions
+"""^^xsd:string .
+
+code:Descriptionflask_blueprints_send_from_directory_desc a code:Description ;
+    rdfs:label """Send a file from within a directory using :func:`send_file`.
+
+.. code-block:: python
+
+    @app.route("/uploads/<path:name>")
+    def download_file(name):
+        return send_from_directory(
+          """^^xsd:string .
+
+code:Descriptionflask_config_Config_desc a code:Description ;
+    rdfs:label """Works exactly like a dict but provides ways to fill it from files
+or special dictionaries.  There are two common patterns to populate the
+config.
+
+Either you can fill the config from a config file::
+
+"""^^xsd:string .
+
+code:Descriptionflask_copy_current_request_context_desc a code:Description ;
+    rdfs:label """A helper function that decorates a function to retain the current
+request context.  This is useful when working with greenlets.  The moment
+the function is decorated a copy of the request context is c"""^^xsd:string .
+
+code:Descriptionflask_ctx_after_this_request_desc a code:Description ;
+    rdfs:label """Executes a function after this request.  This is useful to modify
+response objects.  The function is passed the response object and has
+to return the same or a new one.
+
+Example::
+
+    @app.route('/')"""^^xsd:string .
+
+code:Descriptionflask_ctx_copy_current_request_context_desc a code:Description ;
+    rdfs:label """A helper function that decorates a function to retain the current
+request context.  This is useful when working with greenlets.  The moment
+the function is decorated a copy of the request context is c"""^^xsd:string .
+
+code:Descriptionflask_ctx_has_app_context_desc a code:Description ;
+    rdfs:label """Works like :func:`has_request_context` but for the application
+context.  You can also just do a boolean check on the
+:data:`current_app` object instead.
+
+.. versionadded:: 0.9"""^^xsd:string .
+
+code:Descriptionflask_ctx_has_request_context_desc a code:Description ;
+    rdfs:label """If you have code that wants to test if a request context is there or
+not this function can be used.  For instance, you may want to take advantage
+of request information if the request object is availa"""^^xsd:string .
+
+code:Descriptionflask_flash_desc a code:Description ;
+    rdfs:label """Flashes a message to the next request.  In order to remove the
+flashed message from the session and to display it to the user,
+the template has to call :func:`get_flashed_messages`.
+
+.. versionchanged"""^^xsd:string .
+
+code:Descriptionflask_get_flashed_messages_desc a code:Description ;
+    rdfs:label """Pulls all flashed messages from the session and returns them.
+Further calls in the same request to the function will return
+the same messages.  By default just the messages are returned,
+but when `wit"""^^xsd:string .
+
+code:Descriptionflask_get_template_attribute_desc a code:Description ;
+    rdfs:label """Loads a macro (or variable) a template exports.  This can be used to
+invoke a macro from within Python code.  If you for example have a
+template named :file:`_cider.html` with the following contents:
+"""^^xsd:string .
+
+code:Descriptionflask_has_app_context_desc a code:Description ;
+    rdfs:label """Works like :func:`has_request_context` but for the application
+context.  You can also just do a boolean check on the
+:data:`current_app` object instead.
+
+.. versionadded:: 0.9"""^^xsd:string .
+
+code:Descriptionflask_has_request_context_desc a code:Description ;
+    rdfs:label """If you have code that wants to test if a request context is there or
+not this function can be used.  For instance, you may want to take advantage
+of request information if the request object is availa"""^^xsd:string .
+
+code:Descriptionflask_helpers_abort_desc a code:Description ;
+    rdfs:label """Raise an :exc:`~werkzeug.exceptions.HTTPException` for the given
+status code.
+
+If :data:`~flask.current_app` is available, it will call its
+:attr:`~flask.Flask.aborter` object, otherwise it will use
+:"""^^xsd:string .
+
+code:Descriptionflask_helpers_flash_desc a code:Description ;
+    rdfs:label """Flashes a message to the next request.  In order to remove the
+flashed message from the session and to display it to the user,
+the template has to call :func:`get_flashed_messages`.
+
+.. versionchanged"""^^xsd:string .
+
+code:Descriptionflask_helpers_get_flashed_messages_desc a code:Description ;
+    rdfs:label """Pulls all flashed messages from the session and returns them.
+Further calls in the same request to the function will return
+the same messages.  By default just the messages are returned,
+but when `wit"""^^xsd:string .
+
+code:Descriptionflask_helpers_get_template_attribute_desc a code:Description ;
+    rdfs:label """Loads a macro (or variable) a template exports.  This can be used to
+invoke a macro from within Python code.  If you for example have a
+template named :file:`_cider.html` with the following contents:
+"""^^xsd:string .
+
+code:Descriptionflask_helpers_make_response_desc a code:Description ;
+    rdfs:label """Sometimes it is necessary to set additional headers in a view.  Because
+views do not have to return response objects but can return a value that
+is converted into a response object by Flask itself, it"""^^xsd:string .
+
+code:Descriptionflask_helpers_redirect_desc a code:Description ;
+    rdfs:label """Create a redirect response object.
+
+If :data:`~flask.current_app` is available, it will use its
+:meth:`~flask.Flask.redirect` method, otherwise it will use
+:func:`werkzeug.utils.redirect`.
+
+:param loc"""^^xsd:string .
+
+code:Descriptionflask_helpers_send_file_desc a code:Description ;
+    rdfs:label """Send the contents of a file to the client.
+
+The first argument can be a file path or a file-like object. Paths
+are preferred in most cases because Werkzeug can manage the file and
+get extra informatio"""^^xsd:string .
+
+code:Descriptionflask_helpers_send_from_directory_desc a code:Description ;
+    rdfs:label """Send a file from within a directory using :func:`send_file`.
+
+.. code-block:: python
+
+    @app.route("/uploads/<path:name>")
+    def download_file(name):
+        return send_from_directory(
+          """^^xsd:string .
+
+code:Descriptionflask_helpers_stream_with_context_desc a code:Description ;
+    rdfs:label """Request contexts disappear when the response is started on the server.
+This is done for efficiency reasons and to make it less likely to encounter
+memory leaks with badly written WSGI middlewares.  Th"""^^xsd:string .
+
+code:Descriptionflask_helpers_url_for_desc a code:Description ;
+    rdfs:label """Generate a URL to the given endpoint with the given values.
+
+This requires an active request or application context, and calls
+:meth:`current_app.url_for() <flask.Flask.url_for>`. See that method
+for """^^xsd:string .
+
+code:Descriptionflask_json_jsonify_desc a code:Description ;
+    rdfs:label """Serialize the given arguments as JSON, and return a
+:class:`~flask.Response` object with the ``application/json``
+mimetype. A dict or list returned from a view will be converted to a
+JSON response aut"""^^xsd:string .
+
+code:Descriptionflask_jsonify_desc a code:Description ;
+    rdfs:label """Serialize the given arguments as JSON, and return a
+:class:`~flask.Response` object with the ``application/json``
+mimetype. A dict or list returned from a view will be converted to a
+JSON response aut"""^^xsd:string .
+
+code:Descriptionflask_make_response_desc a code:Description ;
+    rdfs:label """Sometimes it is necessary to set additional headers in a view.  Because
+views do not have to return response objects but can return a value that
+is converted into a response object by Flask itself, it"""^^xsd:string .
+
+code:Descriptionflask_redirect_desc a code:Description ;
+    rdfs:label """Create a redirect response object.
+
+If :data:`~flask.current_app` is available, it will use its
+:meth:`~flask.Flask.redirect` method, otherwise it will use
+:func:`werkzeug.utils.redirect`.
+
+:param loc"""^^xsd:string .
+
+code:Descriptionflask_render_template_desc a code:Description ;
+    rdfs:label """Render a template by name with the given context.
+
+:param template_name_or_list: The name of the template to render. If
+    a list is given, the first name to exist will be rendered.
+:param context: T"""^^xsd:string .
+
+code:Descriptionflask_render_template_string_desc a code:Description ;
+    rdfs:label """Render a template from the given source string with the given
+context.
+
+:param source: The source code of the template to render.
+:param context: The variables to make available in the template."""^^xsd:string .
+
+code:Descriptionflask_sansio_app_App_redirect_desc a code:Description ;
+    rdfs:label """Create a redirect response object.
+
+This is called by :func:`flask.redirect`, and can be called
+directly as well.
+
+:param location: The URL to redirect to.
+:param code: The status code for the redirec"""^^xsd:string .
+
+code:Descriptionflask_sansio_app_Config_desc a code:Description ;
+    rdfs:label """Works exactly like a dict but provides ways to fill it from files
+or special dictionaries.  There are two common patterns to populate the
+config.
+
+Either you can fill the config from a config file::
+
+"""^^xsd:string .
+
+code:Descriptionflask_sansio_app_Response_desc a code:Description ;
+    rdfs:label """Represents the non-IO parts of an HTTP response, specifically the
+status and headers but not the body.
+
+This class is not meant for general use. It should only be used when
+implementing WSGI, ASGI, or"""^^xsd:string .
+
+code:Descriptionflask_sansio_blueprints_Blueprint_desc a code:Description ;
+    rdfs:label """Represents a blueprint, a collection of routes and other
+app-related functions that can be registered on a real application
+later.
+
+A blueprint is an object that allows defining application functions
+"""^^xsd:string .
+
+code:Descriptionflask_send_file_desc a code:Description ;
+    rdfs:label """Send the contents of a file to the client.
+
+The first argument can be a file path or a file-like object. Paths
+are preferred in most cases because Werkzeug can manage the file and
+get extra informatio"""^^xsd:string .
+
+code:Descriptionflask_send_from_directory_desc a code:Description ;
+    rdfs:label """Send a file from within a directory using :func:`send_file`.
+
+.. code-block:: python
+
+    @app.route("/uploads/<path:name>")
+    def download_file(name):
+        return send_from_directory(
+          """^^xsd:string .
+
+code:Descriptionflask_stream_template_desc a code:Description ;
+    rdfs:label """Render a template by name with the given context as a stream.
+This returns an iterator of strings, which can be used as a
+streaming response from a view.
+
+:param template_name_or_list: The name of the"""^^xsd:string .
+
+code:Descriptionflask_stream_template_string_desc a code:Description ;
+    rdfs:label """Render a template from the given source string with the given
+context as a stream. This returns an iterator of strings, which can
+be used as a streaming response from a view.
+
+:param source: The sourc"""^^xsd:string .
+
+code:Descriptionflask_stream_with_context_desc a code:Description ;
+    rdfs:label """Request contexts disappear when the response is started on the server.
+This is done for efficiency reasons and to make it less likely to encounter
+memory leaks with badly written WSGI middlewares.  Th"""^^xsd:string .
+
+code:Descriptionflask_templating_render_template_desc a code:Description ;
+    rdfs:label """Render a template by name with the given context.
+
+:param template_name_or_list: The name of the template to render. If
+    a list is given, the first name to exist will be rendered.
+:param context: T"""^^xsd:string .
+
+code:Descriptionflask_templating_render_template_string_desc a code:Description ;
+    rdfs:label """Render a template from the given source string with the given
+context.
+
+:param source: The source code of the template to render.
+:param context: The variables to make available in the template."""^^xsd:string .
+
+code:Descriptionflask_templating_stream_template_desc a code:Description ;
+    rdfs:label """Render a template by name with the given context as a stream.
+This returns an iterator of strings, which can be used as a
+streaming response from a view.
+
+:param template_name_or_list: The name of the"""^^xsd:string .
+
+code:Descriptionflask_templating_stream_template_string_desc a code:Description ;
+    rdfs:label """Render a template from the given source string with the given
+context as a stream. This returns an iterator of strings, which can
+be used as a streaming response from a view.
+
+:param source: The sourc"""^^xsd:string .
+
+code:Descriptionflask_templating_stream_with_context_desc a code:Description ;
+    rdfs:label """Request contexts disappear when the response is started on the server.
+This is done for efficiency reasons and to make it less likely to encounter
+memory leaks with badly written WSGI middlewares.  Th"""^^xsd:string .
+
+code:Descriptionflask_url_for_desc a code:Description ;
+    rdfs:label """Generate a URL to the given endpoint with the given values.
+
+This requires an active request or application context, and calls
+:meth:`current_app.url_for() <flask.Flask.url_for>`. See that method
+for """^^xsd:string .
+
+code:Descriptionflask_wrappers_Request_desc a code:Description ;
+    rdfs:label """The request object used by default in Flask.  Remembers the
+matched endpoint and view arguments.
+
+It is what ends up as :class:`~flask.request`.  If you want to replace
+the request object used you can"""^^xsd:string .
+
+code:Descriptionflask_wrappers_Response_desc a code:Description ;
+    rdfs:label """The response object that is used by default in Flask.  Works like the
+response object from Werkzeug but is set to have an HTML mimetype by
+default.  Quite often you don't have to create this object yo"""^^xsd:string .
+
+code:Library rdfs:label "Library" .
+
+code:Moduleflask_app a code:Module ;
+    rdfs:label "flask.app"^^xsd:string ;
+    code:include code:Classflask_Flask,
+        code:Classflask_app_Flask .
+
+code:Moduleflask_blueprints a code:Module ;
+    rdfs:label "flask.blueprints"^^xsd:string ;
+    code:include code:Classflask_Blueprint,
+        code:Classflask_blueprints_Blueprint .
+
+code:Moduleflask_config a code:Module ;
+    rdfs:label "flask.config"^^xsd:string ;
+    code:include code:Classflask_Config,
+        code:Classflask_config_Config,
+        code:Classflask_sansio_app_Config .
+
+code:Moduleflask_ctx a code:Module ;
+    rdfs:label "flask.ctx"^^xsd:string ;
+    code:hasMethod code:APIflask_after_this_request,
+        code:APIflask_copy_current_request_context,
+        code:APIflask_ctx_after_this_request,
+        code:APIflask_ctx_copy_current_request_context,
+        code:APIflask_ctx_has_app_context,
+        code:APIflask_ctx_has_request_context,
+        code:APIflask_has_app_context,
+        code:APIflask_has_request_context .
+
+code:Moduleflask_helpers a code:Module ;
+    rdfs:label "flask.helpers"^^xsd:string ;
+    code:hasMethod code:APIflask_abort,
+        code:APIflask_app_get_flashed_messages,
+        code:APIflask_app_send_from_directory,
+        code:APIflask_blueprints_send_from_directory,
+        code:APIflask_flash,
+        code:APIflask_get_flashed_messages,
+        code:APIflask_get_template_attribute,
+        code:APIflask_helpers_abort,
+        code:APIflask_helpers_flash,
+        code:APIflask_helpers_get_flashed_messages,
+        code:APIflask_helpers_get_template_attribute,
+        code:APIflask_helpers_make_response,
+        code:APIflask_helpers_redirect,
+        code:APIflask_helpers_send_file,
+        code:APIflask_helpers_send_from_directory,
+        code:APIflask_helpers_stream_with_context,
+        code:APIflask_helpers_url_for,
+        code:APIflask_make_response,
+        code:APIflask_redirect,
+        code:APIflask_send_file,
+        code:APIflask_send_from_directory,
+        code:APIflask_stream_with_context,
+        code:APIflask_templating_stream_with_context,
+        code:APIflask_url_for .
+
+code:Moduleflask_json a code:Module ;
+    rdfs:label "flask.json"^^xsd:string ;
+    code:hasMethod code:APIflask_json_jsonify,
+        code:APIflask_jsonify .
+
+code:Moduleflask_sansio_app a code:Module ;
+    rdfs:label "flask.sansio.app"^^xsd:string .
+
+code:Moduleflask_sansio_blueprints a code:Module ;
+    rdfs:label "flask.sansio.blueprints"^^xsd:string ;
+    code:include code:Classflask_sansio_blueprints_Blueprint .
+
+code:Moduleflask_templating a code:Module ;
+    rdfs:label "flask.templating"^^xsd:string ;
+    code:hasMethod code:APIflask_render_template,
+        code:APIflask_render_template_string,
+        code:APIflask_stream_template,
+        code:APIflask_stream_template_string,
+        code:APIflask_templating_render_template,
+        code:APIflask_templating_render_template_string,
+        code:APIflask_templating_stream_template,
+        code:APIflask_templating_stream_template_string .
+
+code:Moduleflask_wrappers a code:Module ;
+    rdfs:label "flask.wrappers"^^xsd:string ;
+    code:include code:Classflask_Request,
+        code:Classflask_Response,
+        code:Classflask_app_Request,
+        code:Classflask_app_Response,
+        code:Classflask_wrappers_Request,
+        code:Classflask_wrappers_Response .
+
+code:Modulewerkzeug_sansio_response a code:Module ;
+    rdfs:label "werkzeug.sansio.response"^^xsd:string ;
+    code:include code:Classflask_sansio_app_Response .
+
+code:Parameterflask_Flask_make_response_rv a code:Parameter ;
+    rdfs:label "rv (optional=False)"^^xsd:string .
+
+code:Parameterflask_Flask_make_response_self a code:Parameter ;
+    rdfs:label "self (optional=False)"^^xsd:string .
+
+code:Parameterflask_Flask_redirect_code a code:Parameter ;
+    rdfs:label "code (optional=True)"^^xsd:string .
+
+code:Parameterflask_Flask_redirect_location a code:Parameter ;
+    rdfs:label "location (optional=False)"^^xsd:string .
+
+code:Parameterflask_Flask_redirect_self a code:Parameter ;
+    rdfs:label "self (optional=False)"^^xsd:string .
+
+code:Parameterflask_Flask_url_for__anchor a code:Parameter ;
+    rdfs:label "_anchor (optional=True)"^^xsd:string .
+
+code:Parameterflask_Flask_url_for__external a code:Parameter ;
+    rdfs:label "_external (optional=True)"^^xsd:string .
+
+code:Parameterflask_Flask_url_for__method a code:Parameter ;
+    rdfs:label "_method (optional=True)"^^xsd:string .
+
+code:Parameterflask_Flask_url_for__scheme a code:Parameter ;
+    rdfs:label "_scheme (optional=True)"^^xsd:string .
+
+code:Parameterflask_Flask_url_for_endpoint a code:Parameter ;
+    rdfs:label "endpoint (optional=False)"^^xsd:string .
+
+code:Parameterflask_Flask_url_for_self a code:Parameter ;
+    rdfs:label "self (optional=False)"^^xsd:string .
+
+code:Parameterflask_Flask_url_for_values a code:Parameter ;
+    rdfs:label "values (optional=False)"^^xsd:string .
+
+code:Parameterflask_abort_args a code:Parameter ;
+    rdfs:label "args (optional=False)"^^xsd:string .
+
+code:Parameterflask_abort_code a code:Parameter ;
+    rdfs:label "code (optional=False)"^^xsd:string .
+
+code:Parameterflask_abort_kwargs a code:Parameter ;
+    rdfs:label "kwargs (optional=False)"^^xsd:string .
+
+code:Parameterflask_after_this_request_f a code:Parameter ;
+    rdfs:label "f (optional=False)"^^xsd:string .
+
+code:Parameterflask_app_App_redirect_code a code:Parameter ;
+    rdfs:label "code (optional=True)"^^xsd:string .
+
+code:Parameterflask_app_App_redirect_location a code:Parameter ;
+    rdfs:label "location (optional=False)"^^xsd:string .
+
+code:Parameterflask_app_App_redirect_self a code:Parameter ;
+    rdfs:label "self (optional=False)"^^xsd:string .
+
+code:Parameterflask_app_Flask_make_response_rv a code:Parameter ;
+    rdfs:label "rv (optional=False)"^^xsd:string .
+
+code:Parameterflask_app_Flask_make_response_self a code:Parameter ;
+    rdfs:label "self (optional=False)"^^xsd:string .
+
+code:Parameterflask_app_Flask_redirect_code a code:Parameter ;
+    rdfs:label "code (optional=True)"^^xsd:string .
+
+code:Parameterflask_app_Flask_redirect_location a code:Parameter ;
+    rdfs:label "location (optional=False)"^^xsd:string .
+
+code:Parameterflask_app_Flask_redirect_self a code:Parameter ;
+    rdfs:label "self (optional=False)"^^xsd:string .
+
+code:Parameterflask_app_Flask_url_for__anchor a code:Parameter ;
+    rdfs:label "_anchor (optional=True)"^^xsd:string .
+
+code:Parameterflask_app_Flask_url_for__external a code:Parameter ;
+    rdfs:label "_external (optional=True)"^^xsd:string .
+
+code:Parameterflask_app_Flask_url_for__method a code:Parameter ;
+    rdfs:label "_method (optional=True)"^^xsd:string .
+
+code:Parameterflask_app_Flask_url_for__scheme a code:Parameter ;
+    rdfs:label "_scheme (optional=True)"^^xsd:string .
+
+code:Parameterflask_app_Flask_url_for_endpoint a code:Parameter ;
+    rdfs:label "endpoint (optional=False)"^^xsd:string .
+
+code:Parameterflask_app_Flask_url_for_self a code:Parameter ;
+    rdfs:label "self (optional=False)"^^xsd:string .
+
+code:Parameterflask_app_Flask_url_for_values a code:Parameter ;
+    rdfs:label "values (optional=False)"^^xsd:string .
+
+code:Parameterflask_app_get_flashed_messages_category_filter a code:Parameter ;
+    rdfs:label "category_filter (optional=True)"^^xsd:string .
+
+code:Parameterflask_app_get_flashed_messages_with_categories a code:Parameter ;
+    rdfs:label "with_categories (optional=True)"^^xsd:string .
+
+code:Parameterflask_app_send_from_directory_directory a code:Parameter ;
+    rdfs:label "directory (optional=False)"^^xsd:string .
+
+code:Parameterflask_app_send_from_directory_kwargs a code:Parameter ;
+    rdfs:label "kwargs (optional=False)"^^xsd:string .
+
+code:Parameterflask_app_send_from_directory_path a code:Parameter ;
+    rdfs:label "path (optional=False)"^^xsd:string .
+
+code:Parameterflask_blueprints_send_from_directory_directory a code:Parameter ;
+    rdfs:label "directory (optional=False)"^^xsd:string .
+
+code:Parameterflask_blueprints_send_from_directory_kwargs a code:Parameter ;
+    rdfs:label "kwargs (optional=False)"^^xsd:string .
+
+code:Parameterflask_blueprints_send_from_directory_path a code:Parameter ;
+    rdfs:label "path (optional=False)"^^xsd:string .
+
+code:Parameterflask_copy_current_request_context_f a code:Parameter ;
+    rdfs:label "f (optional=False)"^^xsd:string .
+
+code:Parameterflask_ctx_after_this_request_f a code:Parameter ;
+    rdfs:label "f (optional=False)"^^xsd:string .
+
+code:Parameterflask_ctx_copy_current_request_context_f a code:Parameter ;
+    rdfs:label "f (optional=False)"^^xsd:string .
+
+code:Parameterflask_flash_category a code:Parameter ;
+    rdfs:label "category (optional=True)"^^xsd:string .
+
+code:Parameterflask_flash_message a code:Parameter ;
+    rdfs:label "message (optional=False)"^^xsd:string .
+
+code:Parameterflask_get_flashed_messages_category_filter a code:Parameter ;
+    rdfs:label "category_filter (optional=True)"^^xsd:string .
+
+code:Parameterflask_get_flashed_messages_with_categories a code:Parameter ;
+    rdfs:label "with_categories (optional=True)"^^xsd:string .
+
+code:Parameterflask_get_template_attribute_attribute a code:Parameter ;
+    rdfs:label "attribute (optional=False)"^^xsd:string .
+
+code:Parameterflask_get_template_attribute_template_name a code:Parameter ;
+    rdfs:label "template_name (optional=False)"^^xsd:string .
+
+code:Parameterflask_helpers_abort_args a code:Parameter ;
+    rdfs:label "args (optional=False)"^^xsd:string .
+
+code:Parameterflask_helpers_abort_code a code:Parameter ;
+    rdfs:label "code (optional=False)"^^xsd:string .
+
+code:Parameterflask_helpers_abort_kwargs a code:Parameter ;
+    rdfs:label "kwargs (optional=False)"^^xsd:string .
+
+code:Parameterflask_helpers_flash_category a code:Parameter ;
+    rdfs:label "category (optional=True)"^^xsd:string .
+
+code:Parameterflask_helpers_flash_message a code:Parameter ;
+    rdfs:label "message (optional=False)"^^xsd:string .
+
+code:Parameterflask_helpers_get_flashed_messages_category_filter a code:Parameter ;
+    rdfs:label "category_filter (optional=True)"^^xsd:string .
+
+code:Parameterflask_helpers_get_flashed_messages_with_categories a code:Parameter ;
+    rdfs:label "with_categories (optional=True)"^^xsd:string .
+
+code:Parameterflask_helpers_get_template_attribute_attribute a code:Parameter ;
+    rdfs:label "attribute (optional=False)"^^xsd:string .
+
+code:Parameterflask_helpers_get_template_attribute_template_name a code:Parameter ;
+    rdfs:label "template_name (optional=False)"^^xsd:string .
+
+code:Parameterflask_helpers_make_response_args a code:Parameter ;
+    rdfs:label "args (optional=False)"^^xsd:string .
+
+code:Parameterflask_helpers_redirect_Response a code:Parameter ;
+    rdfs:label "Response (optional=True)"^^xsd:string .
+
+code:Parameterflask_helpers_redirect_code a code:Parameter ;
+    rdfs:label "code (optional=True)"^^xsd:string .
+
+code:Parameterflask_helpers_redirect_location a code:Parameter ;
+    rdfs:label "location (optional=False)"^^xsd:string .
+
+code:Parameterflask_helpers_send_file_as_attachment a code:Parameter ;
+    rdfs:label "as_attachment (optional=True)"^^xsd:string .
+
+code:Parameterflask_helpers_send_file_conditional a code:Parameter ;
+    rdfs:label "conditional (optional=True)"^^xsd:string .
+
+code:Parameterflask_helpers_send_file_download_name a code:Parameter ;
+    rdfs:label "download_name (optional=True)"^^xsd:string .
+
+code:Parameterflask_helpers_send_file_etag a code:Parameter ;
+    rdfs:label "etag (optional=True)"^^xsd:string .
+
+code:Parameterflask_helpers_send_file_last_modified a code:Parameter ;
+    rdfs:label "last_modified (optional=True)"^^xsd:string .
+
+code:Parameterflask_helpers_send_file_max_age a code:Parameter ;
+    rdfs:label "max_age (optional=True)"^^xsd:string .
+
+code:Parameterflask_helpers_send_file_mimetype a code:Parameter ;
+    rdfs:label "mimetype (optional=True)"^^xsd:string .
+
+code:Parameterflask_helpers_send_file_path_or_file a code:Parameter ;
+    rdfs:label "path_or_file (optional=False)"^^xsd:string .
+
+code:Parameterflask_helpers_send_from_directory_directory a code:Parameter ;
+    rdfs:label "directory (optional=False)"^^xsd:string .
+
+code:Parameterflask_helpers_send_from_directory_kwargs a code:Parameter ;
+    rdfs:label "kwargs (optional=False)"^^xsd:string .
+
+code:Parameterflask_helpers_send_from_directory_path a code:Parameter ;
+    rdfs:label "path (optional=False)"^^xsd:string .
+
+code:Parameterflask_helpers_stream_with_context_generator_or_function a code:Parameter ;
+    rdfs:label "generator_or_function (optional=False)"^^xsd:string .
+
+code:Parameterflask_helpers_url_for__anchor a code:Parameter ;
+    rdfs:label "_anchor (optional=True)"^^xsd:string .
+
+code:Parameterflask_helpers_url_for__external a code:Parameter ;
+    rdfs:label "_external (optional=True)"^^xsd:string .
+
+code:Parameterflask_helpers_url_for__method a code:Parameter ;
+    rdfs:label "_method (optional=True)"^^xsd:string .
+
+code:Parameterflask_helpers_url_for__scheme a code:Parameter ;
+    rdfs:label "_scheme (optional=True)"^^xsd:string .
+
+code:Parameterflask_helpers_url_for_endpoint a code:Parameter ;
+    rdfs:label "endpoint (optional=False)"^^xsd:string .
+
+code:Parameterflask_helpers_url_for_values a code:Parameter ;
+    rdfs:label "values (optional=False)"^^xsd:string .
+
+code:Parameterflask_json_jsonify_args a code:Parameter ;
+    rdfs:label "args (optional=False)"^^xsd:string .
+
+code:Parameterflask_json_jsonify_kwargs a code:Parameter ;
+    rdfs:label "kwargs (optional=False)"^^xsd:string .
+
+code:Parameterflask_jsonify_args a code:Parameter ;
+    rdfs:label "args (optional=False)"^^xsd:string .
+
+code:Parameterflask_jsonify_kwargs a code:Parameter ;
+    rdfs:label "kwargs (optional=False)"^^xsd:string .
+
+code:Parameterflask_make_response_args a code:Parameter ;
+    rdfs:label "args (optional=False)"^^xsd:string .
+
+code:Parameterflask_redirect_Response a code:Parameter ;
+    rdfs:label "Response (optional=True)"^^xsd:string .
+
+code:Parameterflask_redirect_code a code:Parameter ;
+    rdfs:label "code (optional=True)"^^xsd:string .
+
+code:Parameterflask_redirect_location a code:Parameter ;
+    rdfs:label "location (optional=False)"^^xsd:string .
+
+code:Parameterflask_render_template_context a code:Parameter ;
+    rdfs:label "context (optional=False)"^^xsd:string .
+
+code:Parameterflask_render_template_string_context a code:Parameter ;
+    rdfs:label "context (optional=False)"^^xsd:string .
+
+code:Parameterflask_render_template_string_source a code:Parameter ;
+    rdfs:label "source (optional=False)"^^xsd:string .
+
+code:Parameterflask_render_template_template_name_or_list a code:Parameter ;
+    rdfs:label "template_name_or_list (optional=False)"^^xsd:string .
+
+code:Parameterflask_sansio_app_App_redirect_code a code:Parameter ;
+    rdfs:label "code (optional=True)"^^xsd:string .
+
+code:Parameterflask_sansio_app_App_redirect_location a code:Parameter ;
+    rdfs:label "location (optional=False)"^^xsd:string .
+
+code:Parameterflask_sansio_app_App_redirect_self a code:Parameter ;
+    rdfs:label "self (optional=False)"^^xsd:string .
+
+code:Parameterflask_send_file_as_attachment a code:Parameter ;
+    rdfs:label "as_attachment (optional=True)"^^xsd:string .
+
+code:Parameterflask_send_file_conditional a code:Parameter ;
+    rdfs:label "conditional (optional=True)"^^xsd:string .
+
+code:Parameterflask_send_file_download_name a code:Parameter ;
+    rdfs:label "download_name (optional=True)"^^xsd:string .
+
+code:Parameterflask_send_file_etag a code:Parameter ;
+    rdfs:label "etag (optional=True)"^^xsd:string .
+
+code:Parameterflask_send_file_last_modified a code:Parameter ;
+    rdfs:label "last_modified (optional=True)"^^xsd:string .
+
+code:Parameterflask_send_file_max_age a code:Parameter ;
+    rdfs:label "max_age (optional=True)"^^xsd:string .
+
+code:Parameterflask_send_file_mimetype a code:Parameter ;
+    rdfs:label "mimetype (optional=True)"^^xsd:string .
+
+code:Parameterflask_send_file_path_or_file a code:Parameter ;
+    rdfs:label "path_or_file (optional=False)"^^xsd:string .
+
+code:Parameterflask_send_from_directory_directory a code:Parameter ;
+    rdfs:label "directory (optional=False)"^^xsd:string .
+
+code:Parameterflask_send_from_directory_kwargs a code:Parameter ;
+    rdfs:label "kwargs (optional=False)"^^xsd:string .
+
+code:Parameterflask_send_from_directory_path a code:Parameter ;
+    rdfs:label "path (optional=False)"^^xsd:string .
+
+code:Parameterflask_stream_template_context a code:Parameter ;
+    rdfs:label "context (optional=False)"^^xsd:string .
+
+code:Parameterflask_stream_template_string_context a code:Parameter ;
+    rdfs:label "context (optional=False)"^^xsd:string .
+
+code:Parameterflask_stream_template_string_source a code:Parameter ;
+    rdfs:label "source (optional=False)"^^xsd:string .
+
+code:Parameterflask_stream_template_template_name_or_list a code:Parameter ;
+    rdfs:label "template_name_or_list (optional=False)"^^xsd:string .
+
+code:Parameterflask_stream_with_context_generator_or_function a code:Parameter ;
+    rdfs:label "generator_or_function (optional=False)"^^xsd:string .
+
+code:Parameterflask_templating_render_template_context a code:Parameter ;
+    rdfs:label "context (optional=False)"^^xsd:string .
+
+code:Parameterflask_templating_render_template_string_context a code:Parameter ;
+    rdfs:label "context (optional=False)"^^xsd:string .
+
+code:Parameterflask_templating_render_template_string_source a code:Parameter ;
+    rdfs:label "source (optional=False)"^^xsd:string .
+
+code:Parameterflask_templating_render_template_template_name_or_list a code:Parameter ;
+    rdfs:label "template_name_or_list (optional=False)"^^xsd:string .
+
+code:Parameterflask_templating_stream_template_context a code:Parameter ;
+    rdfs:label "context (optional=False)"^^xsd:string .
+
+code:Parameterflask_templating_stream_template_string_context a code:Parameter ;
+    rdfs:label "context (optional=False)"^^xsd:string .
+
+code:Parameterflask_templating_stream_template_string_source a code:Parameter ;
+    rdfs:label "source (optional=False)"^^xsd:string .
+
+code:Parameterflask_templating_stream_template_template_name_or_list a code:Parameter ;
+    rdfs:label "template_name_or_list (optional=False)"^^xsd:string .
+
+code:Parameterflask_templating_stream_with_context_generator_or_function a code:Parameter ;
+    rdfs:label "generator_or_function (optional=False)"^^xsd:string .
+
+code:Parameterflask_url_for__anchor a code:Parameter ;
+    rdfs:label "_anchor (optional=True)"^^xsd:string .
+
+code:Parameterflask_url_for__external a code:Parameter ;
+    rdfs:label "_external (optional=True)"^^xsd:string .
+
+code:Parameterflask_url_for__method a code:Parameter ;
+    rdfs:label "_method (optional=True)"^^xsd:string .
+
+code:Parameterflask_url_for__scheme a code:Parameter ;
+    rdfs:label "_scheme (optional=True)"^^xsd:string .
+
+code:Parameterflask_url_for_endpoint a code:Parameter ;
+    rdfs:label "endpoint (optional=False)"^^xsd:string .
+
+code:Parameterflask_url_for_values a code:Parameter ;
+    rdfs:label "values (optional=False)"^^xsd:string .
+
+code:Scripttemp_venv_temp_venv_flask_Lib_site-packages_flask_app_py a code:Script ;
+    rdfs:label "temp_venv\\temp_venv_flask\\Lib\\site-packages\\flask\\app.py"^^xsd:string ;
+    code:containModule code:Moduleflask_app .
+
+code:Scripttemp_venv_temp_venv_flask_Lib_site-packages_flask_blueprints_py a code:Script ;
+    rdfs:label "temp_venv\\temp_venv_flask\\Lib\\site-packages\\flask\\blueprints.py"^^xsd:string ;
+    code:containModule code:Moduleflask_blueprints .
+
+code:Scripttemp_venv_temp_venv_flask_Lib_site-packages_flask_config_py a code:Script ;
+    rdfs:label "temp_venv\\temp_venv_flask\\Lib\\site-packages\\flask\\config.py"^^xsd:string ;
+    code:containModule code:Moduleflask_config .
+
+code:Scripttemp_venv_temp_venv_flask_Lib_site-packages_flask_ctx_py a code:Script ;
+    rdfs:label "temp_venv\\temp_venv_flask\\Lib\\site-packages\\flask\\ctx.py"^^xsd:string ;
+    code:containModule code:Moduleflask_ctx .
+
+code:Scripttemp_venv_temp_venv_flask_Lib_site-packages_flask_globals_py a code:Script ;
+    rdfs:label "temp_venv\\temp_venv_flask\\Lib\\site-packages\\flask\\globals.py"^^xsd:string .
+
+code:Scripttemp_venv_temp_venv_flask_Lib_site-packages_flask_helpers_py a code:Script ;
+    rdfs:label "temp_venv\\temp_venv_flask\\Lib\\site-packages\\flask\\helpers.py"^^xsd:string ;
+    code:containModule code:Moduleflask_helpers .
+
+code:Scripttemp_venv_temp_venv_flask_Lib_site-packages_flask_json___init___py a code:Script ;
+    rdfs:label "temp_venv\\temp_venv_flask\\Lib\\site-packages\\flask\\json\\__init__.py"^^xsd:string ;
+    code:containModule code:Moduleflask_json .
+
+code:Scripttemp_venv_temp_venv_flask_Lib_site-packages_flask_sansio_app_py a code:Script ;
+    rdfs:label "temp_venv\\temp_venv_flask\\Lib\\site-packages\\flask\\sansio\\app.py"^^xsd:string ;
+    code:containModule code:Moduleflask_sansio_app .
+
+code:Scripttemp_venv_temp_venv_flask_Lib_site-packages_flask_sansio_blueprints_py a code:Script ;
+    rdfs:label "temp_venv\\temp_venv_flask\\Lib\\site-packages\\flask\\sansio\\blueprints.py"^^xsd:string ;
+    code:containModule code:Moduleflask_sansio_blueprints .
+
+code:Scripttemp_venv_temp_venv_flask_Lib_site-packages_flask_signals_py a code:Script ;
+    rdfs:label "temp_venv\\temp_venv_flask\\Lib\\site-packages\\flask\\signals.py"^^xsd:string .
+
+code:Scripttemp_venv_temp_venv_flask_Lib_site-packages_flask_templating_py a code:Script ;
+    rdfs:label "temp_venv\\temp_venv_flask\\Lib\\site-packages\\flask\\templating.py"^^xsd:string ;
+    code:containModule code:Moduleflask_templating .
+
+code:Scripttemp_venv_temp_venv_flask_Lib_site-packages_flask_typing_py a code:Script ;
+    rdfs:label "temp_venv\\temp_venv_flask\\Lib\\site-packages\\flask\\typing.py"^^xsd:string .
+
+code:Scripttemp_venv_temp_venv_flask_Lib_site-packages_flask_wrappers_py a code:Script ;
+    rdfs:label "temp_venv\\temp_venv_flask\\Lib\\site-packages\\flask\\wrappers.py"^^xsd:string ;
+    code:containModule code:Moduleflask_wrappers .
+
+code:Scripttemp_venv_temp_venv_flask_Lib_site-packages_werkzeug_sansio_response_py a code:Script ;
+    rdfs:label "temp_venv\\temp_venv_flask\\Lib\\site-packages\\werkzeug\\sansio\\response.py"^^xsd:string ;
+    code:containModule code:Modulewerkzeug_sansio_response .
+
+code:Module rdfs:label "Module" .
+
+code:Script rdfs:label "Script" .
+
+code:Class rdfs:label "Class" .
+
+code:API rdfs:label "API" .
+
+code:Description rdfs:label "Description" .
+
+code:Parameter rdfs:label "Parameter" .
+
